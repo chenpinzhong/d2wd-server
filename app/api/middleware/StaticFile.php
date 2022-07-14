@@ -12,7 +12,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-namespace app\index\middleware;
+namespace app\api\middleware;
 
 use Webman\MiddlewareInterface;
 use Webman\Http\Response;
