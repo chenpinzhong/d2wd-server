@@ -1,15 +1,14 @@
 <?php
-namespace app\api\controller;
+namespace app\admin\controller;
 use support\Request;
 class Index{
     public function index(Request $request){
-        return response('api webman');
+        return response('api webman1');
     }
-    
     public function view(Request $request){
-        return view('index/view', ['name' => 'webman']);
+        return response('api webman2');
+        //return view('index/view', ['name' => 'webman']);
     }
-
     public function json(Request $request){
         return json(['code' => 0, 'msg' => 'ok','type'=>'api']);
     }
