@@ -2,14 +2,15 @@
 /*
     菜单功能
 */
-namespace app\admin\controller\menu;
+namespace app\admin\controller\user;
 use support\Request;
-class index{
+use support\Db;
+class api{
     public function index(Request $request){
-        $data_array=array();
-        return json(['code' => 0, 'msg' => 'ok','data'=>$data_array]);
+        $count = Db::table('admin_user')->where('account_name', 'chenpinzhong')->count();
+        return json(['code' => 0, 'msg' => 'ok','data'=>$count]);
     }
-    
+
     public function view(Request $request){
         return view('index/view', ['name' => 'webman']);
     }

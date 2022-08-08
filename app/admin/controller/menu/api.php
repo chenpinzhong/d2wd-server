@@ -92,7 +92,6 @@ class api{
                 )
         );
         $data_array[]=$menu_array;
-
         return json(['code' => 0, 'msg' => 'ok','data'=>$data_array]);
     }
     

@@ -2,7 +2,7 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__.'/server.php';//引入自定义服务
-
+//require_once __DIR__.'/db_listen.php';//db监听
 use Workerman\Worker;//底层socket框架
 use Workerman\Protocols\Http;//http服务
 use Workerman\Connection\TcpConnection;//tcp连接服务
