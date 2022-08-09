@@ -7,8 +7,9 @@ use support\Request;
 use support\Db;
 class api{
     public function index(Request $request){
-        $count = Db::table('admin_user')->where('account_name', 'chenpinzhong')->count();
-        return json(['code' => 0, 'msg' => 'ok','data'=>$count]);
+        $list = Db::table('admin_user')
+                 ->paginate($request->input('page_size',20), '*', 'page', $request->input('page',1));
+        return json(['code' => 0, 'msg' => 'ok','data'=>$list]);
     }
 
     public function view(Request $request){
