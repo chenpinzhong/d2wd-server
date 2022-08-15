@@ -3,6 +3,8 @@
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__.'/server.php';//引入自定义服务
 //require_once __DIR__.'/db_listen.php';//db监听
+
+
 use Workerman\Worker;//底层socket框架
 use Workerman\Protocols\Http;//http服务
 use Workerman\Connection\TcpConnection;//tcp连接服务
@@ -14,6 +16,7 @@ use Dotenv\Dotenv; //env 环境变量
 use support\Request;//请求
 use support\Log; //日志
 use support\Container; //容器
+
 
 ini_set('display_errors', 'on');//设置错误级别 方便查看错误
 error_reporting(E_ALL);//显示全部错误
@@ -95,7 +98,7 @@ if ($config['listen']) {
     }
 
     $worker->onWorkerStart = function ($worker) {
-        require_once base_path() . '/support/bootstrap.php';
+        require_once base_path() . '/support/bootstrap.php';//加载启动项
         //$app = new App($worker, Container::instance(), Log::channel('default'), app_path(), public_path());
         $app = new Server($worker, Container::instance(), Log::channel('default'), app_path(), public_path());
         Http::requestClass(config('app.request_class', config('server.request_class', Request::class)));
