@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e34cf86aad9d68d6aacfc51b1c468f2d",
+    "content-hash": "cc78f04e5a1802732c9179bb0124666b",
     "packages": [
         {
             "name": "d2wd/think-db",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chenpinzhong/think-db.git",
-                "reference": "6ff4a95050861aa024520306dd88e742956c5821"
+                "reference": "e57896bd17cadab0d4e537d5f33a7ff96ba5f4ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chenpinzhong/think-db/zipball/6ff4a95050861aa024520306dd88e742956c5821",
-                "reference": "6ff4a95050861aa024520306dd88e742956c5821",
+                "url": "https://api.github.com/repos/chenpinzhong/think-db/zipball/e57896bd17cadab0d4e537d5f33a7ff96ba5f4ab",
+                "reference": "e57896bd17cadab0d4e537d5f33a7ff96ba5f4ab",
                 "shasum": ""
             },
             "require": {
@@ -30,11 +30,6 @@
             },
             "default-branch": true,
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "files": [
                     "src/topthink/think-orm/stubs/load_stubs.php",
@@ -53,9 +48,9 @@
                 "MIT"
             ],
             "support": {
-                "source": "https://github.com/chenpinzhong/think-db/tree/vv1.0.0"
+                "source": "https://github.com/chenpinzhong/think-db/tree/main"
             },
-            "time": "2022-08-15T08:44:31+00:00"
+            "time": "2022-08-17T08:20:03+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -850,13 +845,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
                 "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -1332,6 +1321,47 @@
                 }
             ],
             "time": "2022-06-27T16:58:25+00:00"
+        },
+        {
+            "name": "topthink/think-template",
+            "version": "v2.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/top-think/think-template.git",
+                "reference": "abfc293f74f9ef5127b5c416310a01fe42e59368"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/top-think/think-template/zipball/abfc293f74f9ef5127b5c416310a01fe42e59368",
+                "reference": "abfc293f74f9ef5127b5c416310a01fe42e59368",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "think\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "liu21st",
+                    "email": "liu21st@gmail.com"
+                }
+            ],
+            "description": "the php template engine",
+            "support": {
+                "issues": "https://github.com/top-think/think-template/issues",
+                "source": "https://github.com/top-think/think-template/tree/v2.0.8"
+            },
+            "time": "2020-12-10T07:52:03+00:00"
         },
         {
             "name": "voku/portable-ascii",

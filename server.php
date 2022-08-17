@@ -55,9 +55,11 @@ class Server extends App
             }
 
             $controller_and_action = static::parse_controller_action($path);
+            var_dump($controller_and_action);
             if (!$controller_and_action || Route::hasDisableDefaultRoute()) {
-                $callback = static::getFallback();
                 $request->app = $request->controller = $request->action = '';
+                $app=$controller=$action='index';
+                $callback = static::getCallback($app, [$controller_and_action['instance'], $action]);
                 static::send($connection, $callback($request), $request);
                 return null;
             }
@@ -67,8 +69,10 @@ class Server extends App
             $callback = static::getCallback($app, [$controller_and_action['instance'], $action]);
             static::$_callbacks[$key] = [$callback, $app, $controller, $action, null];
             [$callback, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
+            echo '这里 2!'.PHP_EOL;
             static::send($connection, $callback($request), $request);
         } catch (\Throwable $e) {
+            echo '这里 1!'.PHP_EOL;
             static::send($connection, static::exceptionResponse($e, $request), $request);
         }
         return null;
@@ -107,6 +111,12 @@ class Server extends App
         if ($controller_action = static::get_controller_action($controller_class, $action)) {
             return $controller_action;
         }
+        $app=$controller=$action='index';
+        $controller_class = "app\\$app\\controller\\$controller$suffix";
+        if ($controller_action = static::get_controller_action($controller_class, $action)) {
+            return $controller_action;
+        }
+
         return false;
     }
     /**
@@ -119,6 +129,7 @@ class Server extends App
      */
     protected static function get_controller_action($controller_class, $action)
     {
+        var_dump('aaa',$controller_class);
         if (
             static::load_controller($controller_class)
             && ($controller_class = (new \ReflectionClass($controller_class))->name)

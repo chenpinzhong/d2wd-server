@@ -47,10 +47,13 @@ class api{
             $data_array['password']=$password;
             Db::table('admin_user')->insert($data_array);
         }
+
         if(empty($error_array)){
-            return json(['code' => 200, 'msg' => 'ok']);
+            return jump(['title'=>'管理员注册','code' => 200,'msg'=>'注册成功','url'=>'/admin/admin_user/add']);//注册成功
+        }else{
+            $error_msg=implode(',',$error_array);//错误信息
+            return jump(['title'=>'管理员注册','code' => 100,'msg'=>$error_msg,'url'=>'/admin/admin_user/add']);//注册失败
         }
-        return json(['code' => 100, 'msg' => implode(',',$error_array)]);
     }
 
     public function json(Request $request){

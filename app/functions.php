@@ -10,13 +10,18 @@ function password($password=''):string{
 }
 
 function jump($info):string{
+    if(empty($info['url']))$info['url']='';
     $script_string='';
     $script_string.='<script>';
     if($info['code']=="200"){
-        $script_string.="document.location.href = '/admin/handle/success?id=1';";
+        if(empty($info['title']))$info['title']='成功';
+        if(empty($info['msg']))$info['msg']='处理成功!';
+        $script_string.="window.location.href = '/admin/handle/success?title={$info['title']}&msg={$info['msg']}&url={$info['url']}';";
     }else{
-        $script_string.="document.location.href = '/admin/handle/fail?id=1';";
+        if(empty($info['title']))$info['title']='失败';
+        if(empty($info['msg']))$info['msg']='处理失败!';
+        $script_string.="window.location.href = '/admin/handle/fail?title={$info['title']}&msg={$info['msg']}&url={$info['url']}';";
     }
-    $script_string.='<script>';
+    $script_string.='</script>';
     return $script_string;
 }

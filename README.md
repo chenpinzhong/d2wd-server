@@ -14,3 +14,7 @@ https://www.techempower.com/benchmarks/#section=test&runid=9716e3cd-9e53-433c-b6
 ## LICENSE
 
 MIT
+
+
+# 数据库的包 需要这样安装 目前没搞明白开发版本问题
+PHP D:\UI\composer\composer.phar  require d2wd/think-db:@dev
