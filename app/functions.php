@@ -4,11 +4,14 @@
  * @param string $password
  * @return mixed|string
  */
-
 function password($password=''):string{
     return sha1(sha1($password).'d2wd'.md5($password));
 }
-
+/**
+ *  页面跳转函数
+ * @param array jump
+ * @return mixed|string
+ */
 function jump($info):string{
     if(empty($info['url']))$info['url']='';
     $script_string='';

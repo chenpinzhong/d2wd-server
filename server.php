@@ -22,6 +22,22 @@ class Server extends App
     }
 
     /**
+     * @param Request $request
+     * @return string
+     */
+    public function request_path(Request $request): string
+    {
+        //GET //XXX//XX/XX?id=cc
+        $first_line = \strstr($request->rawBuffer(), "\r\n", true);
+        $tmp = \explode(' ', $first_line, 3);//tmp 数据 去掉了GET  //XXX//XX/XX?id=cc
+        $temp_array=explode('?',$tmp[1],2);
+        $tmp[1]= implode('/',array_filter(\explode('/',$temp_array[0])));
+        //如果请求后面存在参数
+        if(!empty($temp_array[1]))$tmp[1];
+        return $tmp[1];
+    }
+
+    /**
      * @param TcpConnection $connection
      * @param Request $request
      * @return null
@@ -32,8 +48,8 @@ class Server extends App
             static::$_request = $request;
             static::$_connection = $connection;
             $path = $request->path();
+            $path=$this->request_path($request); //改进方法
             $key = $request->method() . $path;
-            echo '新的请求:' . $key . PHP_EOL;
             //如果处理过这个请求 就执行使用 历史处理方法处理
             if (isset(static::$_callbacks[$key])) {
                 [$callback, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
@@ -55,7 +71,6 @@ class Server extends App
             }
 
             $controller_and_action = static::parse_controller_action($path);
-            var_dump($controller_and_action);
             if (!$controller_and_action || Route::hasDisableDefaultRoute()) {
                 $request->app = $request->controller = $request->action = '';
                 $app=$controller=$action='index';
@@ -69,10 +84,8 @@ class Server extends App
             $callback = static::getCallback($app, [$controller_and_action['instance'], $action]);
             static::$_callbacks[$key] = [$callback, $app, $controller, $action, null];
             [$callback, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
-            echo '这里 2!'.PHP_EOL;
             static::send($connection, $callback($request), $request);
         } catch (\Throwable $e) {
-            echo '这里 1!'.PHP_EOL;
             static::send($connection, static::exceptionResponse($e, $request), $request);
         }
         return null;
@@ -129,7 +142,6 @@ class Server extends App
      */
     protected static function get_controller_action($controller_class, $action)
     {
-        var_dump('aaa',$controller_class);
         if (
             static::load_controller($controller_class)
             && ($controller_class = (new \ReflectionClass($controller_class))->name)
