@@ -18,7 +18,7 @@ if (!is_dir($runtime_process_path)) {
     mkdir($runtime_process_path);
 }
 $process_files = [
-    __DIR__ . DIRECTORY_SEPARATOR . 'start.php'
+    __DIR__ . DIRECTORY_SEPARATOR . 'run.php'
 ];
 foreach (config('process', []) as $process_name => $config) {
     $file_content = <<<EOF
