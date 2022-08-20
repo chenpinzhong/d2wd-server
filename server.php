@@ -1,200 +1,144 @@
 <?php
 
-use Webman\App;
-use Workerman\Worker;
-use Workerman\Connection\TcpConnection;
-use Webman\Http\Request;
-use Webman\Http\Response;
-use Webman\Route\Route as RouteObject;
-use Webman\Route;
-use Webman\Exception\ExceptionHandlerInterface;
-use Webman\Exception\ExceptionHandler;
+namespace support;
+
+use Dotenv\Dotenv;
 use Webman\Config;
-use FastRoute\Dispatcher;
-use Psr\Container\ContainerInterface;
-use Monolog\Logger;
+use Webman\Util;
+use Workerman\Connection\TcpConnection;
+use Workerman\Protocols\Http;
+use Workerman\Worker;
 
 class Server extends App
 {
-    public function __construct(Worker $worker, $container, $logger, $app_path, $public_path)
-    {
-        parent::__construct($worker, $container, $logger, $app_path, $public_path);
-    }
-
     /**
-     * @param Request $request
-     * @return string
+     * @return void
      */
-    public function request_path(Request $request): string
+    public static function run()
     {
-        //GET //XXX//XX/XX?id=cc
-        $first_line = \strstr($request->rawBuffer(), "\r\n", true);
-        $tmp = \explode(' ', $first_line, 3);//tmp 数据 去掉了GET  //XXX//XX/XX?id=cc
-        $temp_array=explode('?',$tmp[1],2);
-        $tmp[1]= implode('/',array_filter(\explode('/',$temp_array[0])));
-        //如果请求后面存在参数
-        if(!empty($temp_array[1]))$tmp[1];
-        return $tmp[1];
-    }
+        ini_set('display_errors', 'on');
+        error_reporting(E_ALL);
 
-    /**
-     * @param TcpConnection $connection
-     * @param Request $request
-     * @return null
-     */
-    public function onMessage(TcpConnection $connection, $request)
-    {
-        try {
-            static::$_request = $request;
-            static::$_connection = $connection;
-            $path = $request->path();
-            $path=$this->request_path($request); //改进方法
-            $key = $request->method() . $path;
-            //如果处理过这个请求 就执行使用 历史处理方法处理
-            if (isset(static::$_callbacks[$key])) {
-                [$callback, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
-                static::send($connection, $callback($request), $request);
-                return null;
-            }
-            //不安全的url访问 ../
-            if (static::unsafeUri($connection, $path, $request)) {
-                return null;
-            }
-
-            //直接访问文件
-            if (static::findFile($connection, $path, $key, $request)) {
-                return null;
-            }
-
-            if (static::findRoute($connection, $path, $key, $request)) {
-                return null;
-            }
-
-            $controller_and_action = static::parse_controller_action($path);
-            if (!$controller_and_action || Route::hasDisableDefaultRoute()) {
-                $request->app = $request->controller = $request->action = '';
-                $app=$controller=$action='index';
-                $callback = static::getCallback($app, [$controller_and_action['instance'], $action]);
-                static::send($connection, $callback($request), $request);
-                return null;
-            }
-            $app = $controller_and_action['app'];
-            $controller = $controller_and_action['controller'];
-            $action = $controller_and_action['action'];
-            $callback = static::getCallback($app, [$controller_and_action['instance'], $action]);
-            static::$_callbacks[$key] = [$callback, $app, $controller, $action, null];
-            [$callback, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
-            static::send($connection, $callback($request), $request);
-        } catch (\Throwable $e) {
-            static::send($connection, static::exceptionResponse($e, $request), $request);
-        }
-        return null;
-    }
-    /**
-     * @param $path
-     * @return array|bool
-     */
-    protected static function parse_controller_action($path)
-    {
-        $suffix = config('app.controller_suffix', '');
-        $path_explode = explode('/', trim($path, '/'));
-        $app = !empty($path_explode[0]) ? $path_explode[0] : 'index';
-        $controller = $path_explode[1] ?? 'index';
-        $controller = str_replace('.', '\\', $controller);
-
-        $action = $path_explode[2] ?? 'index';
-        if (isset($path_explode[2])) {
-            $controller_class = "app\\$app\\controller\\$controller$suffix";
-            if ($controller_action = static::get_controller_action($controller_class, $action)) {
-                return $controller_action;
+        if (class_exists(Dotenv::class) && file_exists(base_path() . '/.env')) {
+            if (method_exists(Dotenv::class, 'createUnsafeImmutable')) {
+                Dotenv::createUnsafeImmutable(base_path())->load();
+            } else {
+                Dotenv::createMutable(base_path())->load();
             }
         }
 
-        $controller = $app;
-        $action = $path_explode[1] ?? 'index';
+        static::loadAllConfig(['route', 'container']);
 
-        $controller_class = "app\\controller\\$controller$suffix";
-        if ($controller_action = static::get_controller_action($controller_class, $action)) {
-            return $controller_action;
+        $error_reporting = config('app.error_reporting');
+        if (isset($error_reporting)) {
+            error_reporting($error_reporting);
+        }
+        if ($timezone = config('app.default_timezone')) {
+            date_default_timezone_set($timezone);
         }
 
-        $controller = $path_explode[1] ?? 'index';
-        $action = $path_explode[2] ?? 'index';
-        $controller_class = "app\\$app\\controller\\$controller$suffix";
-        if ($controller_action = static::get_controller_action($controller_class, $action)) {
-            return $controller_action;
-        }
-        $app=$controller=$action='index';
-        $controller_class = "app\\$app\\controller\\$controller$suffix";
-        if ($controller_action = static::get_controller_action($controller_class, $action)) {
-            return $controller_action;
+        $runtime_logs_path = runtime_path() . DIRECTORY_SEPARATOR . 'logs';
+        if (!file_exists($runtime_logs_path) || !is_dir($runtime_logs_path)) {
+            if (!mkdir($runtime_logs_path, 0777, true)) {
+                throw new \RuntimeException("Failed to create runtime logs directory. Please check the permission.");
+            }
         }
 
-        return false;
-    }
-    /**
-     * @param $controller_class
-     * @param $action
-     * @return array|false
-     * @throws \Psr\Container\ContainerExceptionInterface
-     * @throws \Psr\Container\NotFoundExceptionInterface
-     * @throws \ReflectionException
-     */
-    protected static function get_controller_action($controller_class, $action)
-    {
-        if (
-            static::load_controller($controller_class)
-            && ($controller_class = (new \ReflectionClass($controller_class))->name)
-            && \is_callable([$instance = static::$_container->get($controller_class), $action])
-        ) {
-            return [
-                'app'        => static::getAppByController($controller_class),
-                'controller' => $controller_class,
-                'action'     => static::getRealMethod($controller_class, $action),
-                'instance'   => $instance,
+        $runtime_views_path = runtime_path() . DIRECTORY_SEPARATOR . 'views';
+        if (!file_exists($runtime_views_path) || !is_dir($runtime_views_path)) {
+            if (!mkdir($runtime_views_path, 0777, true)) {
+                throw new \RuntimeException("Failed to create runtime views directory. Please check the permission.");
+            }
+        }
+
+        Worker::$onMasterReload = function () {
+            if (function_exists('opcache_get_status')) {
+                if ($status = \opcache_get_status()) {
+                    if (isset($status['scripts']) && $scripts = $status['scripts']) {
+                        foreach (array_keys($scripts) as $file) {
+                            \opcache_invalidate($file, true);
+                        }
+                    }
+                }
+            }
+        };
+
+        $config = config('server');
+        Worker::$pidFile = $config['pid_file'];
+        Worker::$stdoutFile = $config['stdout_file'];
+        Worker::$logFile = $config['log_file'];
+        Worker::$eventLoopClass = $config['event_loop'] ?? '';
+        TcpConnection::$defaultMaxPackageSize = $config['max_package_size'] ?? 10 * 1024 * 1024;
+        if (property_exists(Worker::class, 'statusFile')) {
+            Worker::$statusFile = $config['status_file'] ?? '';
+        }
+        if (property_exists(Worker::class, 'stopTimeout')) {
+            Worker::$stopTimeout = $config['stop_timeout'] ?? 2;
+        }
+
+        if ($config['listen']) {
+            $worker = new Worker($config['listen'], $config['context']);
+            $property_map = [
+                'name',
+                'count',
+                'user',
+                'group',
+                'reusePort',
+                'transport',
+                'protocol'
             ];
+            foreach ($property_map as $property) {
+                if (isset($config[$property])) {
+                    $worker->$property = $config[$property];
+                }
+            }
+
+            $worker->onWorkerStart = function ($worker) {
+                require_once \base_path() . '/support/bootstrap.php';
+                #$app = new \Webman\App(config('app.request_class', Request::class), Log::channel('default'), app_path(), public_path());
+                $app = new \Webman\WebServer(config('app.request_class', Request::class), Log::channel('default'), app_path(), public_path());
+                $worker->onMessage = [$app, 'onMessage'];
+                \call_user_func([$app, 'onWorkerStart'], $worker);
+            };
         }
-        return false;
+
+        // Windows does not support custom processes.
+        if (\DIRECTORY_SEPARATOR === '/') {
+            foreach (config('process', []) as $process_name => $config) {
+                worker_start($process_name, $config);
+            }
+            foreach (config('plugin', []) as $firm => $projects) {
+                foreach ($projects as $name => $project) {
+                    if (!is_array($project)) {
+                        continue;
+                    }
+                    foreach ($project['process'] ?? [] as $process_name => $config) {
+                        worker_start("plugin.$firm.$name.$process_name", $config);
+                    }
+                }
+                foreach ($projects['process'] ?? [] as $process_name => $config) {
+                    worker_start("plugin.$firm.$process_name", $config);
+                }
+            }
+        }
+
+        Worker::runAll();
     }
 
     /**
-     * @param $controller_class
-     * @return bool
+     * @param array $excludes
+     * @return void
      */
-    protected static function load_controller($controller_class)
+    public static function loadAllConfig(array $excludes = [])
     {
-
-        static $controller_files = [];
-        if (empty($controller_files)) {
-            $app_path = static::$_appPath;
-            $dir_iterator = new \RecursiveDirectoryIterator($app_path, \FilesystemIterator::SKIP_DOTS | \FilesystemIterator::FOLLOW_SYMLINKS);
-            $iterator = new \RecursiveIteratorIterator($dir_iterator);
-            $app_base_path_length = \strrpos($app_path, DIRECTORY_SEPARATOR) + 1;
-            foreach ($iterator as $spl_file) {
-                $file = (string)$spl_file;
-                if (\is_dir($file) || false === \strpos(strtolower($file), DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR) || $spl_file->getExtension() !== 'php') {
-                    continue;
-                }
-                $controller_files[$file] = \str_replace(DIRECTORY_SEPARATOR, "\\", \strtolower(\substr(\substr($file, $app_base_path_length), 0, -4)));
+        Config::load(config_path(), $excludes);
+        $directory = base_path() . '/plugin';
+        foreach (Util::scanDir($directory, false) as $name) {
+            $dir = "$directory/$name/config";
+            if (\is_dir($dir)) {
+                Config::load($dir, $excludes, "plugin.$name");
             }
         }
-
-        if (\class_exists($controller_class)) {
-            return true;
-        }
-
-        $controller_class = \strtolower($controller_class);
-        if ($controller_class[0] === "\\") {
-            $controller_class = \substr($controller_class, 1);
-        }
-        foreach ($controller_files as $real_path => $class_name) {
-            if ($class_name === $controller_class) {
-                require_once $real_path;
-                if (\class_exists($controller_class, false)) {
-                    return true;
-                }
-            }
-        }
-        return false;
     }
+
 }
