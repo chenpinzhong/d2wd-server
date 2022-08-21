@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6650e5c37730da20e9486c0e1fd92b6e",
+    "content-hash": "3bcc6c0574a354baf97ebf01d9a6e008",
     "packages": [
         {
             "name": "d2wd/think-db",
@@ -2088,6 +2088,56 @@
                 "wiki": "http://www.workerman.net/doc/webman"
             },
             "time": "2022-08-19T09:21:57+00:00"
+        },
+        {
+            "name": "workerman/crontab",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/crontab.git",
+                "reference": "b9280b14941840d1b8542633d60ef303cefe3875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/crontab/zipball/b9280b14941840d1b8542633d60ef303cefe3875",
+                "reference": "b9280b14941840d1b8542633d60ef303cefe3875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "workerman/workerman": ">=4.0.20"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\Crontab\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "walkor",
+                    "email": "walkor@workerman.net",
+                    "homepage": "http://www.workerman.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A crontab written in PHP based on workerman",
+            "homepage": "http://www.workerman.net",
+            "keywords": [
+                "crontab"
+            ],
+            "support": {
+                "email": "walkor@workerman.net",
+                "forum": "http://wenda.workerman.net/",
+                "issues": "https://github.com/walkor/workerman/issues",
+                "source": "https://github.com/walkor/crontab",
+                "wiki": "http://doc.workerman.net/"
+            },
+            "time": "2022-08-01T10:24:22+00:00"
         },
         {
             "name": "workerman/webman-framework",

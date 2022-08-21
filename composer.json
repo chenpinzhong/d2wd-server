@@ -30,7 +30,8 @@
     "illuminate/redis": "^8.83",
     "topthink/think-template": "^2.0",
     "d2wd/think-db": "@dev",
-    "webman/console": "^1.2"
+    "webman/console": "^1.2",
+    "workerman/crontab": "^1.0"
   },
   "suggest": {
     "ext-event": "For better performance. "
