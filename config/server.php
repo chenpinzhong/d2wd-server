@@ -18,6 +18,7 @@ return [
     'context' => [],
     'name' => 'webman',
     'count' => cpu_count() * 2,
+    'count' => 1,
     'user' => '',
     'group' => '',
     'reusePort' => false,
