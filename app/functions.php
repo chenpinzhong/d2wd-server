@@ -28,3 +28,10 @@ function jump($info):string{
     $script_string.='</script>';
     return $script_string;
 }
+/**
+ *  默认视图
+ * @return mixed|string
+ */
+function default_view():string{
+    return public_path().'/index.html';
+}

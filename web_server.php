@@ -33,57 +33,6 @@ use Workerman\Worker;
  * @package Webman
  */
 class WebServer extends \Webman\App{
-
-    /**
-     * @var array
-     */
-    protected static $_callbacks = [];
-
-    /**
-     * @var Worker
-     */
-    protected static $_worker = null;
-
-    /**
-     * @var ContainerInterface
-     */
-    protected static $_container = null;
-
-    /**
-     * @var Logger
-     */
-    protected static $_logger = null;
-
-    /**
-     * @var string
-     */
-    protected static $_appPath = '';
-
-    /**
-     * @var string
-     */
-    protected static $_publicPath = '';
-
-    /**
-     * @var string
-     */
-    protected static $_configPath = '';
-
-    /**
-     * @var TcpConnection
-     */
-    protected static $_connection = null;
-
-    /**
-     * @var Request
-     */
-    protected static $_request = null;
-
-    /**
-     * @var string
-     */
-    protected static $_requestClass = '';
-
     /**
      * App constructor.
      *
@@ -97,6 +46,7 @@ class WebServer extends \Webman\App{
         parent::__construct($request_class,$logger, $app_path,$public_path);
     }
     /**
+     * 加载控制器
      * @param Request $request
      * @return string
      */
@@ -113,6 +63,7 @@ class WebServer extends \Webman\App{
     }
     
     /**
+     * 请求处理
      * @param TcpConnection $connection
      * @param Request $request
      * @return null
@@ -159,6 +110,7 @@ class WebServer extends \Webman\App{
         return null;
     }
     /**
+     * 解析控制器
      * @param string $path
      * @return array|false
      * @throws \Psr\Container\ContainerExceptionInterface
