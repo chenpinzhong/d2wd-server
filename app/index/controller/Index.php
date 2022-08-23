@@ -5,11 +5,8 @@ class Index{
     public function index(Request $request){
         $session = $request->session();
         $path=$request->path();
-        $is_login=false;//是否登陆 默认未登陆
-        if(!empty($session->get('id')))$is_login=true;
-
         //如果是后台页面 后台访问强制要求登陆
-        if(preg_match("/\/admin.*/i", $path) && $is_login==false){
+        if(preg_match("/\/admin.*/i", $path) && !empty($session->get('admin_id'))){
             $is_exception=false;//例外情况
             //不需要登陆的情况
             $exception_array=array(
@@ -32,6 +29,7 @@ class Index{
     public function view(Request $request){
         return view('index/view', ['name' => 'webman']);
     }
+
     public function json(Request $request){
         return json(['code' => 0, 'msg' => 'ok']);
     }

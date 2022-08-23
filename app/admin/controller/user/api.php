@@ -44,7 +44,7 @@ class api{
             $data_array['phone']=$phone;
             $data_array['user_name']=$user_name;
             $data_array['real_name']=$real_name;
-            $data_array['password']=$password;
+            $data_array['password']=password($password);
             Db::table('admin_user')->insert($data_array);
         }
 

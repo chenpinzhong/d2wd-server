@@ -20,5 +20,12 @@ namespace support;
  */
 class Request extends \Webman\Http\Request
 {
-
+    /**
+     * Get path.
+     *
+     * @return mixed
+     */
+    public function path(): string{
+        return request_path($this);
+    }
 }

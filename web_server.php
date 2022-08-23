@@ -27,6 +27,7 @@ use Webman\Route\Route as RouteObject;
 use Workerman\Connection\TcpConnection;
 use Workerman\Protocols\Http;
 use Workerman\Worker;
+use function GuzzleHttp\json_encode;
 
 /**
  * Class App
@@ -61,7 +62,15 @@ class WebServer extends \Webman\App{
         if(!empty($temp_array[1]))$tmp[1];
         return $tmp[1];
     }
-    
+    public static function echo( ...$values){
+        foreach ($values as $index=>$value){
+            if(is_string($value))Worker::safeEcho($value);
+            if(is_array($value))Worker::safeEcho(\json_encode($value,true));
+            if(is_bool($value))Worker::safeEcho($value?'true':'false');
+            if($index<count($values)-1)Worker::safeEcho(",");//写出分隔符
+        }
+        if($values)Worker::safeEcho("\r\n");
+    }
     /**
      * 请求处理
      * @param TcpConnection $connection
@@ -73,9 +82,10 @@ class WebServer extends \Webman\App{
         try {
             parent::$_request=static::$_request = $request;
             parent::$_connection=static::$_connection = $connection;
-            //$path = $request->path();
-            $path=$this->request_path($request);//优化路径问题
+            $path = $request->path(); //这些解析路径不符实际
+            //$path=$this->request_path($request);//优化路径问题
             $key = $request->method() . $path;
+            //WebServer::echo('当前请求路径',$path,date('Y-m-d H:i:s'));
             if (isset(static::$_callbacks[$key])) {
                 [$callback, $request->plugin, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
                 return static::send($connection, $callback($request), $request);
@@ -96,7 +106,6 @@ class WebServer extends \Webman\App{
                 static::send($connection, $callback($request), $request);
                 return null;
             }
-
             $app = $controller_and_action['app'];
             $controller = $controller_and_action['controller'];
             $action = $controller_and_action['action'];
@@ -126,48 +135,11 @@ class WebServer extends \Webman\App{
         $suffix = Config::get("{$config_prefix}app.controller_suffix", '');
         $relative_path = \trim(substr($path, strlen($path_prefix)), '/');
         $path_explode = $relative_path ? \explode('/', $relative_path) : [];
-
-        $action = 'index';
-        if ($controller_action = static::guessControllerAction($path_explode, $action, $suffix, $class_prefix)) {
-            return $controller_action;
-        }
-        $action = \end($path_explode);
-        unset($path_explode[count($path_explode) - 1]);
-        return static::guessControllerAction($path_explode, $action, $suffix, $class_prefix);
-    }
-    /**
-     * 猜测控制器动作
-     * @param $path_explode
-     * @param $action
-     * @param $suffix
-     * @return array|false
-     * @throws \ReflectionException
-     */
-    protected static function guessControllerAction($path_explode, $action, $suffix, $class_prefix)
-    {   
-        /*
-        $map[] = "$class_prefix\\app\\controller\\" . \implode('\\', $path_explode);
-        foreach ($path_explode as $index => $section) {
-            $tmp = $path_explode;
-            $section = str_replace('.', '\\', $section);
-            \array_splice($tmp, $index, 1, [$section, 'controller']);
-            $map[] = "$class_prefix\\" . \implode('\\', \array_merge(['app'], $tmp));
-        }
-        $last_index = \count($map) - 1;
-        $map[$last_index] = \trim($map[$last_index], '\\') . '\\index';
-        
-        foreach ($map as $controller_class) {
-            $controller_class .= $suffix;
-            if ($controller_action = static::getControllerAction($controller_class, $action)) {
-                return $controller_action;
-            }
-        }
-        */
         //改进 可用用点号分隔控制器
         $app = !empty($path_explode[0]) ? $path_explode[0] : 'index';
-        $controller = $path_explode[1] ?? 'index';
+        $controller = !empty($path_explode[1]) ?$path_explode[1]: 'index';
         $controller = str_replace('.', '\\', $controller);
-        $action = $path_explode[2] ?? 'index';
+        $action = !empty($path_explode[2]) ?$path_explode[2]: 'index';
         $controller_class = "app\\$app\\controller\\$controller$suffix";
         if ($controller_action = static::getControllerAction($controller_class, $action)) {
             return $controller_action;
