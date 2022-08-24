@@ -18,6 +18,24 @@ function request_path($request): string
 }
 
 /**
+ * 加载控制器
+ * @param string $path
+ * @return array|string
+ */
+
+function analysis_path(string $path)
+{
+    $path_array=explode("/",$path);
+    $path_array=array_values(array_filter($path_array));//过滤掉空成员
+    if(empty($path_array[0]))$path_array[0]='index';
+    if(empty($path_array[1]))$path_array[1]='index';
+    if(empty($path_array[2]))$path_array[2]='index';
+    [$app,$controller,$action]=$path_array;
+    return [$app,$controller,$action];
+}
+
+
+/**
  *  密码加密函数
  * @param string $password
  * @return mixed|string

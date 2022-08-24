@@ -41,10 +41,11 @@ class login{
             }else{
                 $error_array[]="账号或者密码错误!";
             }
-            WebServer::echo('登陆模块 ccc',$session->get('admin_id'),date('Y-m-d H:i:s'));
+            //WebServer::echo('登陆模块 ccc',$session->get('admin_id'),$session->all(),$error_array,date('Y-m-d H:i:s'));
             if(empty($error_array)){
                 return jump(['title'=>'登陆成功','code' => 200,'msg'=>'登陆成功!','url'=>'/admin/index/index']);//页面需要登录
             }else{
+                //WebServer::echo('登陆模块 a2',$session->get('admin_id'),$session->all(),$error_array,date('Y-m-d H:i:s'));
                 return jump(['title'=>'登陆失败','code' => 100,'msg'=>implode('<br/>',$error_array),'url'=>'/admin/login/index']);//继续登陆
             }
         }
