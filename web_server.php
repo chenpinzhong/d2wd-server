@@ -85,7 +85,7 @@ class WebServer extends \Webman\App{
             $path = $request->path(); //这些解析路径不符实际
             //$path=$this->request_path($request);//优化路径问题
             $key = $request->method() . $path;
-            //WebServer::echo('当前请求路径:',$path,date('Y-m-d H:i:s'));
+            WebServer::echo('当前请求路径:',$path,date('Y-m-d H:i:s'));
             if (isset(static::$_callbacks[$key])) {
                 [$callback, $request->plugin, $request->app, $request->controller, $request->action, $request->route] = static::$_callbacks[$key];
                 return static::send($connection, $callback($request), $request);
