@@ -69,5 +69,5 @@ function jump($info):string{
  * @return mixed|string
  */
 function default_view():string{
-    return public_path().'/index.html';
+    return public_path().'/template/index.html';
 }

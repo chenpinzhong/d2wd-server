@@ -4,7 +4,6 @@ use support\Request;
 class Index{
     public function index(Request $request){
         $session = $request->session();
-
         //普通用户信息存在
         $user=$session->get('user');
         if(!empty($user))$data_array['user']=$user;//网站title
