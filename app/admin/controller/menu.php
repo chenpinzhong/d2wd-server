@@ -33,7 +33,8 @@ class menu
             'fold' => false,
             'child' => array(
                 ['id' => '11007', 'name' => '产品类目', 'href' => "/admin/product_manage/category", 'fold' => true,],
-                ['id' => '11008', 'name' => '产品列表', 'href' => "/admin/product_manage/product", 'fold' => true,],
+                ['id' => '11008', 'name' => '产品列表', 'href' => "/admin/product_manage/index", 'fold' => true,],
+                ['id' => '11009', 'name' => '新增产品', 'href' => "/admin/product_manage/add", 'fold' => true,],
             )
         );
         //租售系统
