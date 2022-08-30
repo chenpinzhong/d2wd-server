@@ -32,9 +32,9 @@ CREATE TABLE `admin_user`  (
   `user_rights` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '特殊权限',
   `age` int(11) NULL DEFAULT NULL COMMENT '年龄',
   `level` int(11) NULL DEFAULT NULL COMMENT '等级',
-  `add_time` datetime(0) NULL DEFAULT NULL COMMENT '注册时间',
-  `offline_time` datetime(0) NULL DEFAULT NULL COMMENT '离线时间',
-  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
+  `add_time` datetime  NOT NULL COMMENT '注册时间',
+  `offline_time` datetime  NOT NULL COMMENT '离线时间',
+  `update_time` datetime  NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
 
@@ -51,7 +51,7 @@ CREATE TABLE `product_catalog`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '目录ID',
   `pid` int(11) NULL DEFAULT NULL COMMENT '父目录ID',
   `catalog_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT '目录名称',
-  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
+  `update_time` datetime  NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
 
