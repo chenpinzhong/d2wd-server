@@ -71,3 +71,14 @@ function jump($info):string{
 function default_view():string{
     return public_path().'/template/index.html';
 }
+
+/**
+ *  文件上传的路径
+ * @return mixed|string
+ */
+function upload_path():string{
+    $upload_path=public_path().'/upload/temp/'.date('Y-m-d');
+    //如果目录不存在 就创建
+    if(!is_dir($upload_path))mkdir($upload_path,'0777',true);
+    return $upload_path;
+}

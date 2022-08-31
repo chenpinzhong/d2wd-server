@@ -33,7 +33,7 @@ class AdminCheck implements MiddlewareInterface
         $session = $request->session();
         [$app,$controller,$action]=analysis_path($path);
         //如果访问admin模块
-        if($app=='admin' && empty($session->get('admin_id'))){
+        if($app=='admin1' && empty($session->get('admin_id'))){
             $is_exception=false;//例外情况
             //不需要登陆的情况
             $controller_action_array=array(

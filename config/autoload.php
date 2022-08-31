@@ -14,8 +14,9 @@
 
 return [
     'files' => [
-        base_path() . '/app/functions.php',
-        base_path() . '/support/Request.php',
-        base_path() . '/support/Response.php',
+        base_path() . '/app/functions.php',//常用函数
+        base_path() . '/support/image.php',//图片处理
+        base_path() . '/support/Request.php',//请求类
+        base_path() . '/support/Response.php',//返回类
     ]
 ];
