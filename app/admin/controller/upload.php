@@ -64,26 +64,27 @@ class upload
                 continue;
             }
             $file_content=file_get_contents($spl_file->getRealPath());
-            $file_name=$spl_file->getUploadName().'_'.md5($file_content).'.'.$spl_file->getUploadExtension();
+            $file_name=$spl_file->getUploadName().'_'. md5($file_content).'.'.$spl_file->getUploadExtension();
+
+            $original_file_path=$file_path."\\".$file_name;
+            $original_file_path_400=$file_path."\\".'400_'.$file_name;
 
 
             $image->initialize([
                 'source_image' => $spl_file->getRealPath(),
-                'width'        => 200,
-                'height'       => 200,
+                'save_path' => $original_file_path_400,
+                'width'        => 400,
+                'height'       => 400,
             ]);
-            $image->resize();
-            $file_data_200=$image;
+            $image->crop();
 
-            $original_file_path=$file_path."\\".$file_name;
-            $original_file_path_200=$file_path."\\".'200'.$file_name;
+
 
             file_put_contents($original_file_path,$file_content);
-            file_put_contents($original_file_path_200,$file_data_200);//存放一个200*200的图像
 
             $list[]=array(
                 'web_path'=>$original_file_path,
-                'web_path_200'=>$original_file_path_200,
+                'web_path_400'=>$original_file_path_400,
                 'getUploadMineType'=>$spl_file->getUploadMineType(),
                 'getSize'=>$spl_file->getSize(),
                 'getUploadExtension'=>$spl_file->getUploadExtension(),

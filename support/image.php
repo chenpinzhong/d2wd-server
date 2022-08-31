@@ -17,6 +17,7 @@ class Image
 {
 
     protected $source_image = ''; // 源文件路径
+    protected $save_path = ''; // 保存路径
     protected $width = ''; // 要设置的宽度
     protected $height = ''; // 要设置的高度
     protected $create_thumb = ''; // 是否创建缩略图
@@ -52,6 +53,7 @@ class Image
     public function resize()
     {
         $source_path = $this->source_image;
+        $save_path = $this->save_path;
         $target_width = $this->width;
         $target_height = $this->height;
         list($source_width, $source_height) = $imagesize = getimagesize($source_path);
@@ -113,7 +115,7 @@ class Image
             if ($this->create_thumb) {
                 $source_path = str_replace('.', $this->thumb_marker . '.', $source_path);
             }
-            $output_func($target_image, $source_path);
+            $output_func($target_image, $save_path);
         }
 
         //销毁资源
@@ -125,6 +127,7 @@ class Image
     public function crop()
     {
         $source_path = $this->source_image;
+        $save_path = $this->save_path;
         $target_width = $this->width;
         $target_height = $this->height;
         list($source_width, $source_height) = $imagesize = getimagesize($source_path);
@@ -187,7 +190,6 @@ class Image
         imagecopy($cropped_image, $source_image, 0, 0, $source_x, $source_y, $cropped_width, $cropped_height);
         // 缩放
         imagecopyresampled($target_image, $cropped_image, 0, 0, 0, 0, $target_width, $target_height, $cropped_width, $cropped_height);
-
         // 图片地址为url
         if (strpos($source_path, 'http') !== false) {
             $output_func($target_image, __DIR__ . '/tmp' . $suffix);
@@ -195,7 +197,7 @@ class Image
             if ($this->create_thumb) {
                 $source_path = str_replace('.', $this->thumb_marker . '.', $source_path);
             }
-            $output_func($target_image, $source_path);
+            $output_func($target_image, $save_path);
         }
 
         // 销毁资源
