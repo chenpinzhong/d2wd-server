@@ -82,3 +82,12 @@ function upload_path():string{
     if(!is_dir($upload_path))mkdir($upload_path,'0777',true);
     return $upload_path;
 }
+
+/**
+ *  真实路径转web路径
+ * @param $path
+ * @return mixed|string
+ */
+function web_path($path):string{
+    return str_replace(public_path(),'',$path);
+}
