@@ -67,7 +67,6 @@ class upload
         $file_path=upload_path();
         $data=array();
         foreach ($request->file() as $key => $spl_file) {
-            echo 'a2--'.PHP_EOL;
             //if($key!='attribute_image')continue;
             //20MB的文件 拒绝上传
             $max_size=20*1024*1024;
@@ -99,13 +98,9 @@ class upload
                 $file_id=Db::table('product_image')->insert($data,true);
                 $data['file_id']=$file_id;
             }
-            //$file_list[]=$data;
         }
         $return_data=[];
         $return_data['url']=$data['web_path'];
-        //$return_data['alt']=$data['file_name'];
-        //$return_data['href']=$data['web_path'];
-        //$return_data['poster']=$data['poster'];
         return json(['errno' => 0, 'msg' => 'ok','data'=>$return_data]);
     }
 
