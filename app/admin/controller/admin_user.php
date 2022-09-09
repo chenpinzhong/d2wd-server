@@ -18,6 +18,19 @@ class admin_user{
         return view(default_view(), $data_array);
     }
 
+    public function get_admin_info(Request $request){
+        $where=array();
+        $session = $request->session();
+        $admin_id=$session->get('admin_id');
+        if(empty($admin_id)){
+            return json(['code' => 0, 'msg' => '未登陆!','data'=>[]]);
+        }
+        $where[]=['id','=',$admin_id];
+        $user_rows=Db::table('admin_user')->where($where)->find();
+        return json(['code' => 200, 'msg' => 'ok','data'=>$user_rows]);
+    }
+
+
     public function get(Request $request){
         $where=array();
         if(!empty($request->input('account_name'))){

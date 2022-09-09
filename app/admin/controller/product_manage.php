@@ -10,6 +10,17 @@ use think\db\Where;
 use think\facade\Db;
 class product_manage
 {
+    //管理员用户列表接口
+    public function get(Request $request){
+        $where=array();
+        if(!empty($request->input('product_name'))){
+            $where[]=['product_name','LIKE',"%".$request->input('product_name')."%"];
+        }
+        $page_size=$request->input('page_size',10);
+        $list=Db::table('product')->where($where)->paginate($page_size);
+        return json(['code' => 200, 'msg' => 'ok','data'=>$list]);
+    }
+
     //添加产品功能
     public function add(Request $request){
         //初始化错误信息
