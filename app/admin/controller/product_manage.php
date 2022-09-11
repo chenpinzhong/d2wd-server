@@ -18,7 +18,72 @@ class product_manage
         }
         $page_size=$request->input('page_size',10);
         $list=Db::table('product')->where($where)->paginate($page_size);
-        return json(['code' => 200, 'msg' => 'ok','data'=>$list]);
+        $list=json_decode(json_encode($list),true);//把对象转为json格式
+        //查询产品的字产品信息
+        $paginate_data=json_decode(json_encode($list),true);
+        $main_data=$paginate_data['data'];
+        
+        $sub_header_map=array();//字表的表头信息
+        $sub_data=array();//当前子集的数据
+        
+        $product_table_data=array();
+        foreach($main_data as $main){
+            $attribute_name_map=array();//属性名称映射表
+            $attribute_value_map=array();//属性值映射表
+            $product_id=$main['id'];
+            $product_sku_where=array();
+            $product_sku_where[]=['product_id','=',$product_id];
+
+            //查询产品属性
+            $product_sku_rows=Db::table('product_sku')->where($product_sku_where)->find();
+            $attribute_ids=explode(",",$product_sku_rows['attribute_ids']);
+            
+            //查询属性名称
+            foreach($attribute_ids as $index=>$attribute_id){
+                $attribute_rows=Db::table('product_attribute')->where('id',($attribute_id))->find();
+                $attribute_name_map[$index]=$attribute_rows['attribute_name'];
+                $sub_header_map[$attribute_rows['attribute_name']]=[];//默认的数据类型
+            }
+            //固定属性值
+            $sub_header_map['库存']=[];
+            $sub_header_map['价格']=[];
+            $sub_header_map['售价']=[];
+
+            $product_sku_list=Db::table('product_sku')->where($product_sku_where)->select()->toArray();
+            $main['child_table']=array();
+            foreach($product_sku_list as $product_sku){
+                $sub_data=$sub_header_map;
+                $attribute_value_ids=explode(",",$product_sku['attribute_value_ids']);
+                //查询属性值
+                foreach($attribute_value_ids as $attribute_value_id){
+                    $attribute_value_rows=Db::table('product_attribute_value')->where('id',intval($attribute_value_id))->find();
+                    $attribute_value_map[$attribute_value_id]=[];
+                    $attribute_value_map[$attribute_value_id]['attribute_value']=$attribute_value_rows['attribute_value'];//属性值
+                    $attribute_value_map[$attribute_value_id]['attribute_image_id']=$attribute_value_rows['attribute_image_id'];//属性图
+                    $attribute_image_id=$attribute_value_rows['attribute_image_id'];
+
+                    if(!empty($attribute_image_id)){
+                        $product_image_rows=Db::table('product_image')->where('id',$attribute_image_id)->find();
+                        $attribute_value_map[$attribute_value_id]['attribute_image']=$product_image_rows['web_path_400'];
+                    }
+
+                }
+                //查询属性=>属性值
+                foreach($attribute_value_ids as $index=>$attribute_value_id){
+                    $attribute_name=$attribute_name_map[$index];
+                    $attribute_value_info=$attribute_value_map[$attribute_value_id];
+                    //设置属性值
+                    $sub_data[$attribute_name]=$attribute_value_info;
+                }
+                $sub_data['库存']['attribute_value']=$product_sku['stock'];
+                $sub_data['价格']['attribute_value']=$product_sku['price'];
+                $sub_data['售价']['attribute_value']=$product_sku['sale_price'];
+                $main['child_table'][]=$sub_data;
+            }
+            $product_table_data[]=$main;
+        }
+        $paginate_data['data']=$product_table_data;
+        return json(['code' => 200, 'msg' => 'ok','data'=>$paginate_data]);
     }
 
     //添加产品功能
