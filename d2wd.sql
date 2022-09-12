@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 09/09/2022 17:55:16
+ Date: 12/09/2022 18:00:10
 */
 
 SET NAMES utf8mb4;
@@ -91,6 +91,27 @@ INSERT INTO `admin_user` VALUES (4640, 'chenpinzhong', 'cpz', '陈品中', '10eb
 INSERT INTO `admin_user` VALUES (4641, 'chenpinzhong', 'cpz', '陈品中', '10eb365d898388c87a19f12a0e270f147cafdabf', '15323734642', NULL, NULL, NULL, NULL, '2022-08-29 10:13:13', '2022-08-29 10:13:13', '2022-08-29 10:13:13');
 
 -- ----------------------------
+-- Table structure for poster
+-- ----------------------------
+DROP TABLE IF EXISTS `poster`;
+CREATE TABLE `poster`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '海报的名称',
+  `type` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '海报的类型',
+  `image_src` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '海报的路径',
+  `href` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NULL DEFAULT NULL COMMENT '点击后跳转的地址',
+  `add_time` datetime(0) NULL DEFAULT NULL COMMENT '添加时间',
+  `update_time` datetime(0) NULL DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of poster
+-- ----------------------------
+INSERT INTO `poster` VALUES (1, '风景1', 'home', '/images/s2.jpg', '/images/s3.jpg', NULL, NULL);
+INSERT INTO `poster` VALUES (2, '风景2', 'home', '/images/s3.jpg', '/images/s4.jpg', NULL, NULL);
+
+-- ----------------------------
 -- Table structure for product
 -- ----------------------------
 DROP TABLE IF EXISTS `product`;
@@ -109,7 +130,7 @@ CREATE TABLE `product`  (
   INDEX `category_id`(`category_id`) USING BTREE,
   INDEX `product_name`(`product_name`) USING BTREE,
   INDEX `brand_name`(`brand_name`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of product
