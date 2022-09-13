@@ -33,7 +33,7 @@ class Index{
             //查询产品图
             $product_image_where=[['id','=',$image_id]];
             $product_image_rows=Db::table('product_image')->where($product_image_where)->find();
-            $product_info['product_image']=$product_image_rows['web_path_100'];
+            $product_info['product_image']=$product_image_rows['web_path_400'];
             //查询产品价格
             $product_sku_rows=Db::table('product_sku')->where('product_id',$product_id)->order("sale_price asc")->find();
 
@@ -44,16 +44,11 @@ class Index{
                 $product_info['discount']=round($product_info['price']/$product_info['sale_price'],2);
             }
             $product_info['new']= strtotime($product_sku_rows['add_time'])-time()>3600*30;
-            unset($product_info['product_image']);//减少网络传输
+            unset($product_info['product_images']);//减少网络传输
             unset($product_info['attribute_info']);//减少网络传输
             $product_data[]=$product_info;
         }
-
-
-
-
-
-
+        
         $page_data=array();
         $page_data['home_poster']=$poster_list;//首页的海报
         $page_data['product_list']=$product_data;//首页的海报
