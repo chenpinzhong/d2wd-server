@@ -115,7 +115,6 @@ class product_manage
         $product_data['attribute_info']=json_encode($attribute_info,true);//产品属性
         $product_data['product_description']=$editor_html;
         $product_data['product_status']=1;//产品状态 1上架 2下架 3清仓 4租售产品
-        $product_data['add_time']=date('Y-m-d H:i:s',time());//添加时间
         $product_data['update_time']=date('Y-m-d H:i:s',time());//更新时间
 
         //查询产品是否存在
@@ -123,6 +122,7 @@ class product_manage
         $product_where[]=['product_name','=',$product_name];
         $product_rows=Db::table('product')->where($product_where)->find();
         if(empty($product_rows)){
+            $product_data['add_time']=date('Y-m-d H:i:s',time());//添加时间
             $product_id=Db::table('product')->insert($product_data,true);
         }else{
             $product_id=$product_rows['id'];
@@ -137,7 +137,6 @@ class product_manage
             $product_attribute_data=array();
             $product_attribute_data['product_id']=$product_id;
             $product_attribute_data['attribute_name']=$attribute_name;
-            $product_attribute_data['add_time']=date('Y-m-d H:i:s',time());//添加时间
             $product_attribute_data['update_time']=date('Y-m-d H:i:s',time());//更新时间
 
             //更新产品属性
@@ -146,6 +145,7 @@ class product_manage
             $product_attribute_where[]=['attribute_name','=',$attribute_name];
             $product_rows=Db::table('product_attribute')->where($product_attribute_where)->find();
             if(empty($product_rows)){
+                $product_attribute_data['add_time']=date('Y-m-d H:i:s',time());//添加时间
                 $product_attribute_id=Db::table('product_attribute')->insert($product_attribute_data,true);
             }else{
                 $product_attribute_id=$product_rows['id'];
@@ -161,7 +161,6 @@ class product_manage
                 $attribute_value_data['attribute_name']=$attribute_name;
                 $attribute_value_data['attribute_value']=$attribute_info['value'];
                 $attribute_value_data['attribute_image_id']=$attribute_info['image_id'];
-                $attribute_value_data['add_time']=date('Y-m-d H:i:s',time());//添加时间
                 $attribute_value_data['update_time']=date('Y-m-d H:i:s',time());//更新时间
 
                 //更新产品属性值
@@ -172,6 +171,7 @@ class product_manage
                 $attribute_value_rows=Db::table('product_attribute_value')->where($attribute_value_where)->find();
 
                 if(empty($attribute_value_rows)){
+                    $attribute_value_data['add_time']=date('Y-m-d H:i:s',time());//添加时间
                     Db::table('product_attribute_value')->insert($attribute_value_data,true);
                 }else{
                     Db::table('product_attribute_value')->where($attribute_value_where)->update($attribute_value_data);
@@ -210,7 +210,6 @@ class product_manage
             if(!empty($product_info['库存']))$product_sku_data['stock']=$product_info['库存']['value'];
             if(!empty($product_info['价格']))$product_sku_data['price']=$product_info['价格']['value'];
             if(!empty($product_info['售价']))$product_sku_data['sale_price']=$product_info['售价']['value'];
-            $product_sku_data['add_time']=date('Y-m-d H:i:s',time());
             $product_sku_data['update_time']=date('Y-m-d H:i:s',time());
 
             //更新产品属性
@@ -219,10 +218,55 @@ class product_manage
             $product_sku_where[]=['attribute_value_ids','=',$attribute_value_ids];
             $product_sku_rows=Db::table('product_sku')->where($product_sku_where)->find();
             if(empty($product_sku_rows)){
-                Db::table('product_sku')->insert($product_sku_data,true);
+                $product_sku_data['add_time']=date('Y-m-d H:i:s',time());
+                $sku_id=Db::table('product_sku')->insert($product_sku_data,true);
             }else{
+                $sku_id=$product_sku_rows['id'];
                 Db::table('product_sku')->where($product_sku_where)->update($product_sku_data);
             }
+
+            //记录子产品的详细 属性 属性值 数据
+            foreach ($product_info as $attribute_name=>$product_sku_info){
+                //查询产品属性
+                $attribute_where=array();
+                $attribute_where[]=['product_id','=',$product_id];
+                $attribute_where[]=['attribute_name','=',$attribute_name];
+                $attribute_rows=Db::table('product_attribute')->where($attribute_where)->find();
+                if(empty($attribute_rows))continue;//如果产品属性不存在 就不需要处理
+                $attribute_id=$attribute_rows['id'];//记录属性id
+
+                //查询属性值
+                $attribute_value=$product_sku_info['value'];//当前的属性值
+                $attribute_value_where=array();
+                $attribute_value_where[]=['product_id','=',$product_id];
+                $attribute_value_where[]=['attribute_id','=',$attribute_id];
+                $attribute_value_where[]=['attribute_value','=',$attribute_value];
+                $attribute_value_rows=Db::table('product_attribute_value')->where($attribute_value_where)->find();
+                $attribute_value_id=$attribute_value_rows['id'];
+
+                //更新产品属性
+                $product_sku_details_where=array();
+                $product_sku_details_where[]=['sku_id','=',$sku_id];//sku id
+                $product_sku_details_where[]=['product_id','=',$product_id];//产品id
+                $product_sku_details_where[]=['attribute_id','=',$attribute_id];//产品id
+                $product_sku_details_where[]=['attribute_value_id','=',$attribute_value_id];//产品id
+
+                //数据
+                $product_sku_details_data=array();
+                $product_sku_details_data['sku_id']=$sku_id;
+                $product_sku_details_data['product_id']=$product_id;
+                $product_sku_details_data['attribute_id']=$attribute_id;
+                $product_sku_details_data['attribute_value_id']=$attribute_value_id;
+                $product_sku_details_data['update_time']=date('Y-m-d H:i:s',time());
+                $product_sku_rows=Db::table('product_sku_details')->where($product_sku_details_where)->find();
+                if(empty($product_sku_rows)){
+                    $product_sku_details_data['add_time']=date('Y-m-d H:i:s',time());
+                    Db::table('product_sku_details')->insert($product_sku_details_data,true);
+                }else{
+                    Db::table('product_sku_details')->where($product_sku_details_where)->update($product_sku_details_data);
+                }
+            }
+
         }
         $data_array=array();
         $data_array['product_id']=$product_id;

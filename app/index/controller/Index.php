@@ -22,7 +22,7 @@ class Index{
         $poster_list=Db::table('poster')->where($poster_where)->select()->toArray();
         //获取产品列表
         $product_where=[['product_status','=',1]];//只显示上架的产品
-        $product_list=Db::table('product')->where($product_where)->limit(8)->select();
+        $product_list=Db::table('product')->where($product_where)->limit(12)->select();
 
         $product_data=array();
         foreach ($product_list as $index=>$product_info){
@@ -41,14 +41,15 @@ class Index{
             $product_info['sale_price']=$product_sku_rows['sale_price'];//销售价格
             $product_info['discount']=0;
             if($product_info['price']!=0 && $product_info['sale_price']!=0){
-                $product_info['discount']=round($product_info['price']/$product_info['sale_price'],2);
+                $product_info['discount']=(round($product_info['sale_price']/$product_info['price'],2)*100)."%";
             }
-            $product_info['new']= strtotime($product_sku_rows['add_time'])-time()>3600*30;
+
+            $product_info['new']= time()-strtotime($product_sku_rows['add_time'])<3600*24*30;
             unset($product_info['product_images']);//减少网络传输
             unset($product_info['attribute_info']);//减少网络传输
             $product_data[]=$product_info;
         }
-        
+
         $page_data=array();
         $page_data['home_poster']=$poster_list;//首页的海报
         $page_data['product_list']=$product_data;//首页的海报
