@@ -1,0 +1,2 @@
+.help_frame{margin:auto;overflow:hidden;position:relative;width:1200px}.help_frame .title{font-size:24px;height:50px;line-height:50px}.help_frame .fonts_list{font-size:24px}.help_frame .fonts_list .fonts_element{display:inline-block;height:80px;text-align:center;width:160px}.help_frame .fonts_list .fonts_element .name{font-size:14px}
+/*# sourceMappingURL=386.2a27be6f.chunk.css.map*/

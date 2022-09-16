@@ -1,0 +1,267 @@
+[2022-09-10 15:46:41] default.ERROR: 127.0.0.1 POST localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined array key "data" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php:592
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php(592): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(440): think\Collection->offsetGet()
+#2 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): think\Paginator->offsetGet()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#4 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#6 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#12 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#13 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#14 D:\code\d2wd-server\run.php(5): support\Server::run()
+#15 {main} [] []
+[2022-09-10 15:46:42] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined array key "data" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php:592
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php(592): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(440): think\Collection->offsetGet()
+#2 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): think\Paginator->offsetGet()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#4 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#6 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#12 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#13 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#14 D:\code\d2wd-server\run.php(5): support\Server::run()
+#15 {main} [] []
+[2022-09-10 15:47:40] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined array key "data" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php:592
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php(592): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(440): think\Collection->offsetGet()
+#2 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): think\Paginator->offsetGet()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#4 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#6 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#12 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#13 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#14 D:\code\d2wd-server\run.php(5): support\Server::run()
+#15 {main} [] []
+[2022-09-10 15:47:41] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined array key "data" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php:592
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php(592): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(440): think\Collection->offsetGet()
+#2 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): think\Paginator->offsetGet()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#4 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#6 D:\code\d2wd-server\web_server.php(91): Webman\App::Webman\{closure}()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#12 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#13 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#14 D:\code\d2wd-server\run.php(5): support\Server::run()
+#15 {main} [] []
+[2022-09-10 15:48:28] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined array key "data" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php:592
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php(592): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(440): think\Collection->offsetGet()
+#2 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): think\Paginator->offsetGet()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#4 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#6 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#12 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#13 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#14 D:\code\d2wd-server\run.php(5): support\Server::run()
+#15 {main} [] []
+[2022-09-10 15:49:15] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined array key "data" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php:592
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-helper\src\Collection.php(592): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(440): think\Collection->offsetGet()
+#2 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): think\Paginator->offsetGet()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#4 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#6 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#12 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#13 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#14 D:\code\d2wd-server\run.php(5): support\Server::run()
+#15 {main} [] []
+[2022-09-10 15:49:50] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class think\Collection does not have a method "to_array" in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php:514
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\Paginator.php(514): call_user_func_array()
+#1 D:\code\d2wd-server\app\admin\controller\product_manage.php(20): think\Paginator->__call()
+#2 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#3 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#4 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#5 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#11 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#12 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#13 D:\code\d2wd-server\run.php(5): support\Server::run()
+#14 {main} [] []
+[2022-09-10 15:52:39] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Undefined property: think\paginator\driver\Bootstrap::$data in D:\code\d2wd-server\app\admin\controller\product_manage.php:22
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(22): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []
+[2022-09-10 15:57:16] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+Error: Call to undefined method think\Collection::to_array() in D:\code\d2wd-server\app\admin\controller\product_manage.php:30
+Stack trace:
+#0 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#1 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#2 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#3 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-09-10 22:31:41] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Trying to access array offset on value of type null in D:\code\d2wd-server\app\admin\controller\product_manage.php:35
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(35): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []
+[2022-09-10 22:32:13] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Array to string conversion in D:\code\d2wd-server\app\admin\controller\product_manage.php:40
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(40): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []
+[2022-09-10 22:33:49] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Array to string conversion in D:\code\d2wd-server\app\admin\controller\product_manage.php:40
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(40): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []
+[2022-09-10 22:33:51] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Array to string conversion in D:\code\d2wd-server\app\admin\controller\product_manage.php:40
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(40): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(91): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []
+[2022-09-10 22:39:00] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Array to string conversion in D:\code\d2wd-server\app\admin\controller\product_manage.php:40
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(40): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []
+[2022-09-10 22:39:22] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_manage/get?page=1&page_size=10
+ErrorException: Array to string conversion in D:\code\d2wd-server\app\admin\controller\product_manage.php:41
+Stack trace:
+#0 D:\code\d2wd-server\app\admin\controller\product_manage.php(41): support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\product_manage->get()
+#2 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#3 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#4 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#10 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#11 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#12 D:\code\d2wd-server\run.php(5): support\Server::run()
+#13 {main} [] []

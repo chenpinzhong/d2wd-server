@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/529.2e742fa8.chunk.js","mappings":"iHAKA,UALA,WACE,OAAO,iCAGR,C","sources":["pages/admin/index.jsx"],"sourcesContent":["function Index(){\r\n  return <div>\r\n    1111\r\n  </div>\r\n}\r\nexport default Index"],"names":[],"sourceRoot":""}

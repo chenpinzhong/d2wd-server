@@ -34,7 +34,7 @@ class product{
             $product_images=json_decode($product_rows['product_images'],true);
             $product_image_map=array();
             foreach ($product_images as $product_image){
-                $product_image_map[$product_image['file_id']]=$product_image['web_path_400'];
+                $product_image_map[$product_image['file_id']]=$product_image;
             }
 
             //属性集

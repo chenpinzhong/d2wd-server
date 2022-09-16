@@ -1,0 +1,1 @@
+2022-09-13 22:17:43 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot declare class app\index\controller\product, because the name is already in use in D:\code\d2wd-server\app\shop\controller\product.php on line 5"

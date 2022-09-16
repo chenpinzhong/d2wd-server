@@ -1,0 +1,192 @@
+[2022-08-31 21:47:42] default.ERROR: 127.0.0.1 GET localhost:19730/admin/admin_user/get
+think\db\exception\PDOException: SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。 in D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php:810
+Stack trace:
+#0 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\connector\Mysql.php(66): think\db\PDOConnection->getPDOStatement()
+#1 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php(422): think\db\connector\Mysql->getFields()
+#2 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php(362): think\db\PDOConnection->getTableFieldsInfo()
+#3 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php(409): think\db\PDOConnection->getSchemaInfo()
+#4 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php(493): think\db\PDOConnection->getTableInfo()
+#5 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\concern\TableFieldInfo.php(58): think\db\PDOConnection->getFieldsType()
+#6 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\concern\TableFieldInfo.php(81): think\db\Query->getFieldsType()
+#7 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\Builder.php(328): think\db\Query->getFieldsBindType()
+#8 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\Builder.php(299): think\db\Builder->buildWhere()
+#9 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\builder\Mysql.php(94): think\db\Builder->parseWhere()
+#10 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php(1133): think\db\builder\Mysql->select()
+#11 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\PDOConnection.php(1176): think\db\PDOConnection->value()
+#12 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\concern\AggregateQuery.php(33): think\db\PDOConnection->aggregate()
+#13 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\concern\AggregateQuery.php(61): think\db\BaseQuery->aggregate()
+#14 D:\code\d2wd-server\vendor\d2wd\think-db\src\topthink\think-orm\src\db\BaseQuery.php(634): think\db\BaseQuery->count()
+#15 D:\code\d2wd-server\app\admin\controller\admin_user.php(27): think\db\BaseQuery->paginate()
+#16 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(276): app\admin\controller\admin_user->get()
+#17 D:\code\d2wd-server\app\admin\middleware\AdminCheck.php(62): Webman\App::Webman\{closure}()
+#18 D:\code\d2wd-server\vendor\workerman\webman-framework\src\App.php(271): app\admin\middleware\AdminCheck->process()
+#19 D:\code\d2wd-server\web_server.php(116): Webman\App::Webman\{closure}()
+#20 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#21 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#22 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#23 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#24 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#25 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#26 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#27 D:\code\d2wd-server\run.php(5): support\Server::run()
+#28 {main} [] []
+[2022-08-31 22:48:11] default.ERROR: 127.0.0.1 POST localhost:19730/admin/upload/attribute_image
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 22:48:32] default.ERROR: 127.0.0.1 POST localhost:19730/admin/upload/attribute_image
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 22:50:35] default.ERROR: 127.0.0.1 POST localhost:19730/admin/upload/attribute_image
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 22:51:24] default.ERROR: 127.0.0.1 GET localhost:19730/admin/admin_user/get
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 22:51:25] default.ERROR: 127.0.0.1 GET localhost:19730/admin/product_catalog/get
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 22:51:25] default.ERROR: 127.0.0.1 POST localhost:19730/admin/menu/index
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 23:01:16] default.ERROR: 127.0.0.1 GET localhost:19730/admin/admin_user/get
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 23:01:16] default.ERROR: 127.0.0.1 POST localhost:19730/admin/menu/index
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 23:01:20] default.ERROR: 127.0.0.1 GET localhost:19730/admin/admin_user/get
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []
+[2022-08-31 23:01:20] default.ERROR: 127.0.0.1 POST localhost:19730/admin/menu/index
+ErrorException: fwrite(): Write of 19 bytes failed with errno=22 Invalid argument in D:\code\d2wd-server\vendor\workerman\workerman\Worker.php:2174
+Stack trace:
+#0 [internal function]: support\Server::{closure}()
+#1 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2174): fwrite()
+#2 D:\code\d2wd-server\web_server.php(67): Workerman\Worker::safeEcho()
+#3 D:\code\d2wd-server\web_server.php(88): Webman\WebServer::echo()
+#4 D:\code\d2wd-server\vendor\workerman\workerman\Connection\TcpConnection.php(638): Webman\WebServer->onMessage()
+#5 D:\code\d2wd-server\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead()
+#6 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(2447): Workerman\Events\Select->loop()
+#7 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\code\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\code\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\code\d2wd-server\run.php(5): support\Server::run()
+#12 {main} [] []

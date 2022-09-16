@@ -1,0 +1,1577 @@
+2022-08-23 17:35:24 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:24 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:24 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\server.php(97): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#6 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#7 {main}
+2022-08-23 17:35:26 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:26 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:26 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\server.php(97): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#6 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#7 {main}
+2022-08-23 17:35:29 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\server.php(97): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#6 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#7 {main}
+2022-08-23 17:35:29 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:29 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:32 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:32 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-23 17:35:32 pid:1 ParseError: syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\UI\d2wd-server\support\Request.php:30
+Stack trace:
+#0 D:\UI\d2wd-server\server.php(97): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#6 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#7 {main}
+2022-08-24 09:15:03 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:03 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:03 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:06 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:06 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:06 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:09 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:09 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:09 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:12 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:12 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:12 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:15 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:15 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:15 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:18 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:18 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:18 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:21 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:21 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:21 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:24 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:24 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:24 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:27 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:27 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:27 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:30 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:30 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:30 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:33 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:33 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:33 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:36 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:36 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:36 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:39 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:39 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:39 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:42 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:42 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:42 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:45 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:45 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:45 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:48 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:48 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:48 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:50 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:51 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:51 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:52 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:54 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:54 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:54 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:56 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:53
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:15:57 pid:1 ParseError: syntax error, unexpected '}', expecting ';' in D:\UI\d2wd-server\app\functions.php:28
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-24 09:15:57 pid:1 ParseError: syntax error, unexpected '}', expecting ';' in D:\UI\d2wd-server\app\functions.php:28
+Stack trace:
+#0 D:\UI\d2wd-server\support\helpers.php(411): require_once()
+#1 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#2 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#5 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#6 {main}
+2022-08-24 09:15:58 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:58 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:15:58 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:00 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:00 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:00 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:02 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:03 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:03 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:05 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:07 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:07 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:07 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:09 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:09 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:10 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:12 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:12 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:13 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:15 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:15 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:16 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-24 09:16:18 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:18 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#11 {main}
+2022-08-24 09:16:19 pid:1 ParseError: syntax error, unexpected '=' in D:\UI\d2wd-server\app\admin\middleware\AdminCheck.php:50
+Stack trace:
+#0 D:\UI\d2wd-server\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\UI\\d2wd-serv...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('app\\admin\\middl...')
+#2 [internal function]: spl_autoload_call('app\\admin\\middl...')
+#3 D:\UI\d2wd-server\vendor\workerman\webman-framework\src\Middleware.php(40): method_exists('app\\admin\\middl...', 'process')
+#4 D:\UI\d2wd-server\support\bootstrap.php(70): Webman\Middleware::load(Array, '')
+#5 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#7 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#8 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#9 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#10 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#11 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#12 {main}
+2022-08-26 14:19:15 pid:1 Worker process terminated
+2022-08-31 17:36:04 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:04 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:04 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:07 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:07 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:07 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:10 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:10 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:10 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:13 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:13 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:13 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:16 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:16 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:16 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:18 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:19 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:19 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:20 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:22 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_task.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-08-31 17:36:22 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): support\Server::{closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\server.php(97): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): support\Server::support\{closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\server.php(125): Workerman\Worker::runAll()
+#8 D:\UI\d2wd-server\run.php(5): support\Server::run()
+#9 {main}
+2022-08-31 17:36:22 pid:1 ErrorException: include_once(D:\UI\d2wd-server/support/functions.php): failed to open stream: No such file or directory in D:\UI\d2wd-server\support\bootstrap.php:54
+Stack trace:
+#0 D:\UI\d2wd-server\support\bootstrap.php(54): {closure}(2, 'include_once(D:...', 'D:\\UI\\d2wd-serv...', 54, Array)
+#1 D:\UI\d2wd-server\support\bootstrap.php(54): include_once()
+#2 D:\UI\d2wd-server\support\helpers.php(411): require_once('D:\\UI\\d2wd-serv...')
+#3 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(2434): {closure}(Object(Workerman\Worker))
+#4 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1442): Workerman\Worker->run()
+#5 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(1385): Workerman\Worker::forkWorkersForWindows()
+#6 D:\UI\d2wd-server\vendor\workerman\workerman\Worker.php(550): Workerman\Worker::forkWorkers()
+#7 D:\UI\d2wd-server\runtime\windows\start_monitor.php(23): Workerman\Worker::runAll()
+#8 {main}
+2022-09-01 14:14:12 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:12 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:12 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:14 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:14 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:14 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:16 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:16 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:16 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:18 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:18 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:18 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:20 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:20 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:20 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:22 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:22 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:22 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:24 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:24 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:24 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:26 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:26 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:26 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:28 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:28 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:28 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:30 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:30 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:30 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:32 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:32 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
+2022-09-01 14:14:32 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "Cannot redeclare upload_path() (previously declared in D:\UI\d2wd-server\app\functions.php:80) in D:\UI\d2wd-server\app\functions.php on line 94"
